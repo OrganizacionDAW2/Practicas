@@ -78,7 +78,7 @@ boolean fechaincorrecta=false;
             out.println("</div>");
             out.println("</body>");
             out.println("</html>");
-            
+// EN EL CASO DE QUE ENTRARA EN ESTE MÉTODO, DESPUÉS QUÉ? 
             
         }
     }
@@ -131,13 +131,19 @@ boolean fechaincorrecta=false;
             if ((fechaincorrecta == true) || (request.getParameter("Nombre") == "") || (request.getParameter("Usuario") == "") || request.getParameter("Password") == ""){    
             
                 out.println("<h2>Errores en el registro.</h2>");
+// SERIA CONVENIENTE QUE UTILIZARAS EL MÉTODO getContextPath PARA LLAMAR AL SERVLET
                 out.println("<form id=\"fomulario\" action=\"../registro\" method=\"get\"> ");
+                
+// PARA VOLVER AL SERVLET ESTE BOTON TIENE QUE SER DEL TIPO SUBMIT
+// LO QUE TU HACES CON onClick NO ES VÁLIDO YA QUE ESTAMOS EN EL SERVIDOR Y NOS VAMOS AL CLIENTE SIN MÁS
                 out.println("<p><input type=\"button\" name=\"Volver\" value=\"Volver\" onclick=\"history.back()\" />");
+                
                 out.println("</form>");
             
             }
             else {
                 out.println("<h2>Registro satisfactorio.</h2>");
+// LA SALIDA SE REALIZA RECORRIENDO EL MAPA parametros PERO SIN UTILIZAR NINGUN switch
                 while (it.hasNext()) {
                     String key = (String) it.next();
                     String[] valores = parametros.get("Preferencias");

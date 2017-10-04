@@ -1,0 +1,18 @@
+EJECUCIÓN
+No visualizas los mensajes de error correspondientes.
+Una vez que ha ocurrido algún error en la entrada ya siempre aparecen errores aún cuando ya no existen.
+
+PROYECTO
+Todo correcto
+
+FICHERO REGISTRO.HTML
+Tienes que utilizar capas para maquetar en vez de párrafos. En todo caso alguna tabla (<table>).
+
+SERVLET
+El paquete donde reside es conveniente que se llame acorde a lo que almacena. (es.albarregas.servlets)
+Una forma un poco rara de comprobar la validez de una fecha.
+Que el año sea divisible entre 4 no significa que sea bisiesto. (míralo en internet)
+Tienes algunos comentarios en el código del servlet a modo de retroalimentación
+No comentas el código
+
+CALIFICACIÓN DEL EJERCICIO -> 4.00
