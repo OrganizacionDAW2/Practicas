@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Complejo</title>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <style type="text/css">
+                body {background-color: #9FF781;}  /* fondo color azul */ 
+                h1 {color: #088A68;}
+                legend {color:#298A08;}
+                p {color:brown;}
+                #fomulario fieldset {width:65%; background-color: #E1F5A9 }   
+                #fomulario input  {margin-left:10px; text-align: left;}
+        </style>
+    </head>
+    <body>
+        <form id="fomulario" action="../fcomplejo" method="post"> 
+            <fieldset><!-- Primer fieldset: Datos personales -->
+                <legend><em><strong>Datos personales</strong></em></legend>
+                
+                <p><label for="usuario">Usuario</label>&nbsp;&nbsp;
+                <input type="text" id="usuario" name="Usuario" value="" tabindex="1" /></p>
+                
+                <p><label for="password">Password:</label>&nbsp;&nbsp;
+                <input type="password" name="Password" tabindex="2" /></p>
+                
+                <select id="edad" name="Edad">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22" selected="selected">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>    
+                </select>
+                
+            </fieldset>    
+            
+            <fieldset><!-- Segundo fieldset: Otros datos --> 
+                <legend><em><strong>Otros datos</strong></em></legend>
+                <label>Estado civil
+                <input type="radio" name="Estado civil" value="Soltero" checked> Soltero/a
+                <input type="radio" name="Estado civil" value="Casado"> Casado/a
+                <input type="radio" name="Estado civil" value="Viudo"> Viudo/a
+                <input type="radio" name="Estado civul" value="Divorciado"> Divorciado/a
+                </label>
+                
+                <h1>Aficiones(uno o varios, CTRL):</h1>
+                <select name="Aficiones" size="6" multiple>
+                    <option value="Deporte">Deporte</option>
+                    <option value="M&uacute;sica">M&uacute;sica</option>  
+                    <option value="Inform&aacute;tica">Inform&aacute;tica</option>
+                    <option value="Viajes" selected>Viajes</option>
+                    <option value="Tiendas">Tiendas</option>
+                    <option value="Juegos">Juegos</option>
+                </select>
+                
+                <h1>Comentarios:</h1>
+                <textarea name="Comentarios" rows="2" cols="100">Pon tu comentario...</textarea>
+                
+            </fieldset>
+            
+            <fieldset><!-- Tercer fieldset: Medios tecnológicos --> 
+                <legend><em><strong>Medios tecnológicos</strong></em></legend>
+                
+                <label>¿Dispones de Internet?
+                <input type="radio" id="internet" name="Internet" value="Si" checked> Sí
+                <input type="radio" name="Internet" value="No"> No<br>
+                </label>
+                
+               <h1>Sistema operativo (elige uno):</h1>
+                <select name="Sistema operativo" size="4">
+                    <option value="Linux">Linux</option>
+                    <option value="Windows" selected>Windows</option>  
+                    <option value="Macintosh">Macintosh</option>
+                    <option value="Solaris">Solaris</option>
+                </select>
+                
+                <input type="hidden" name="Digito" value="23">
+                
+                <p><input type="submit" name="Enviar" value="Enviar" />
+                    <input type="reset" name="Limpiar" value="Limpiar" title="Restablece los valores por defecto."/></p>
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
