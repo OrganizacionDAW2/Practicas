@@ -23,11 +23,28 @@ p {
     font-size: 30px;
 }
 
-div {
+#contenido {
     border-style: double;
     border-color: darkblue;
     width: 600px;
     height: 200px;
     text-align: center;
     margin-left: 400px;
+    float: left;
+}
+
+#menu1 {
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    margin-left: 100px;
+    float: left;
+}
+
+#menu2 {
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    margin-left: 100px;
+    float: left;
 }

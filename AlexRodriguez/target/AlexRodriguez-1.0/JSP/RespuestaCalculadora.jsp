@@ -18,7 +18,7 @@
         <div>
             <%try {
                 Date fecha = new Date();
-                SimpleDateFormat ft = new SimpleDateFormat ("dd 'de' MMMM 'de' yyyy");
+                SimpleDateFormat ft = new SimpleDateFormat ("EEEE dd 'de' MMMM 'de' yyyy");
                 String fechaActual = ft.format(fecha);
                 %>
  
