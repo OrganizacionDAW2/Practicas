@@ -1,0 +1,6 @@
+es\albarregas\calculadora\pojos\Multiplicacion.class
+es\albarregas\calculadora\pojos\Resta.class
+es\albarregas\calculadora\pojos\Suma.class
+es\albarregas\calculadora\pojos\Division.class
+es\albarregas\calculadora\beans\Calculator.class
+es\albarregas\calculadora\servlets\Controlador.class
