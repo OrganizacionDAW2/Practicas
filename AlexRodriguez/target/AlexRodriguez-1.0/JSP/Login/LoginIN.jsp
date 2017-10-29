@@ -16,7 +16,7 @@ else {//en caso de login incorrecto, nos muetra el error
     response.sendRedirect("Login.jsp?error=1");
 }
 %>
-
+<!-- ESTAS ETIQUETAS NO HACEN FALTA -->
 <!DOCTYPE html>
 <html>
     <head>

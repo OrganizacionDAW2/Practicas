@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%-- LAS ETIQUETAS HTML NO HACEN FALTA --%>
 <!DOCTYPE html>
 <html>
     <head>

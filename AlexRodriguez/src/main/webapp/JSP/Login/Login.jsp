@@ -24,7 +24,7 @@
                 break; //una vez encontrada la cookie salimos del bucle sin necesidad de seguir recorriendolo
         }
     }    
-
+// CUANDO ENCUENTRAS LA COOKIE DEL USUARIO NO OBTINES SU VALOR
     
     if (request.getParameter("error") != null){
         //switch para el tratamiento de erroes
@@ -37,6 +37,7 @@
     }
 
     //obtencion de fecha de ultimo acceso con formato
+    // CON ESTO OBTIENES LA FECHA ACTUAL PERO NO PUEDES SABER LA FECHA DEL ULTIMO ACCESO QUE IRA EN UNA COOKIE
     Date ultimoAcceso = new Date(session.getLastAccessedTime());
     Date fecha = new Date();
     DateFormat formato = DateFormat.getDateTimeInstance(DateFormat.MEDIUM,DateFormat.MEDIUM);
@@ -57,9 +58,11 @@
         <h2>Último acceso: <%=formato.format(ultimoAcceso)%></h2>
         <form action="LoginIN.jsp" method="post">
             <p id="error"><%=msg%></p>
+<!-- EN EL CASO DE RECORDAR EL USUARIO NO MUESTRAS SU NOMBRE -->
             <p>Usuario: <input type="text" name="user"></p>
             <p>Contraseña: <input type="password" name="password"></p>
-            <p>Recuérdame <input type="checkbox" name="recordar"</p><br/><br/>
+<!-- NO HAS CERRADO LA ETIQUETA INPUT -->
+<p>Recuérdame <input type="checkbox" name="recordar"></p><br/><br/>
             <p><input type="submit" value="Enviar"> <a href="../../index.html"><input type="button" value="Volver" name="Volver"/></a></p>
         </form>
 

@@ -105,6 +105,7 @@
                     </p>
                 </form>
                 <%} 
+// NO REALIZAS EL PROCESO DE ALMACENAR LOS DISTINTOS LIBROS EN UNA ESTRUCTURA PARA LUEGO VISUALIZARLOS
                 else{ //Al pulsar Enviar(Enviar!=null) se muestra el resultado %>
                     <h3>Este es el detalle de su pedido:</h3>
                     
